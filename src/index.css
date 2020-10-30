@@ -11,3 +11,90 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+* {
+  box-sizing: border-box;
+  outline: none;
+}
+
+html, body {
+  height: 100%;
+}
+
+#root{
+  height: 100%;
+  display: flex;
+  align-items: center;
+  align-content: center;
+  background-color: rgb(206, 255, 255)
+}
+
+.chat{
+  width: 100%;
+  max-width: 500px;
+  height: 800px;
+  margin: 0 auto ;
+  border-radius: 20px;
+  padding: 20px;
+  background-color: white;
+}
+
+.messages{
+  height: calc(100% - 50px);
+  overflow-y: auto;
+  padding-right: 20px;
+}
+
+.create-message{
+height: 50px;
+display: flex;
+}
+
+.css-input{
+  height: 50px;
+  line-height: 50px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 15px 0 0 15px; 
+  width: 85%;
+  padding: 0 15px;
+}
+
+.css-submit{
+  width: 15%;
+  background-color: #3e85d1;
+  color: white;
+  border: none;
+  border-radius: 0 15px 15px 0 ; 
+  font-size: 15px;
+  font-weight: bold;
+  height: 50px;
+  line-height: 50px;
+}
+
+.css-submit:hover{
+  background-color: #2a70bb;
+}
+
+.message{
+  background-color: rgb(231, 231, 231);
+  color: #333;
+  border-radius: 0 15px 0 15px;
+  padding:  10px;
+  margin-bottom: 10px;
+}
+
+.message-user{
+  font-weight: bold;
+}
+
+.message.message-me{
+  background-color: #3e85d1;
+  color: white;
+  border-radius: 10px 0 10px 10px;
+}
+
+.App-logo{
+  width: 50px;
+  margin-left: 270px;
+}
